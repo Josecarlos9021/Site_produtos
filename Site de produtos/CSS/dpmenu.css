@@ -1,0 +1,36 @@
+.menu{
+	font-size: 25px;
+}
+.dp-menu ul{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	background: radial-gradient(red, black);
+	z-index: 1;
+}
+.dp-menu ul li{
+	display: inline;
+	position: relative;
+}
+.dp-menu ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block;
+}
+.dp-menu ul li a:hover{
+	background: radial-gradient(black, black);
+	color: white;
+}
+/* SUB MENU */
+.dp-menu ul ul{
+	display: none;
+	position: absolute;
+	left: 0;
+}
+.dp-menu ul li:hover ul{
+	display: block;
+}
+.dp-menu ul ul li a{
+	display: block;
+}

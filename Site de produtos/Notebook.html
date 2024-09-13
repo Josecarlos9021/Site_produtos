@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROJETO 2º TDS SUB</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="CSS/dpmenu.css">
+</head>
+<body>
+	<div class="principal">
+		<div class="cabecalho">
+			<div class="logo-cabecalho">
+				<a href="index.html"><img src="imagens/Logotipo_2.0-removebg-preview.png" width="200" height="200" title="Pagina Inicial"></a>
+			</div>
+			<div class="pesquisa">
+				<input id="input" type="text" placeholder="Buscar...">
+				<input id="botao" type="submit" value="Pesquisar">
+			</div>
+			<div class="icone">
+				<nav>
+					<a href="http://www.facebook.com"><img width="30" height="30" src="imagens/icon/fb.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/rss.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/sap.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/twitter.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/vimeo.png"></a>
+				</nav>
+			</div>
+		</div> <!-- FIM DO CABEÇALHO -->
+	<div class="corpo">
+		<div class="menu">
+			<nav class="dp-menu">
+				<ul>
+					<li><a href="index.html">Inicial</a></li>
+					<li><a href="">Produtos</a>
+						<ul>
+							<li><a href="Cadeira.html">Cadeira</a></li>
+							<li><a href="Mesa.html">Mesa</a></li>
+							<li><a href="Mouse.html">Mouse</a></li>
+							<li><a href="Notebook.html">Notebook</a></li>
+						</ul>
+					</li>
+					<li><a href="contato.html">Central de comunicação</a></li>
+					<li><a href="Equipe.html">Equipe</a></li>
+				</ul>
+			</nav>
+		</div><!-- FIM DO MENU DROPDOWN -->
+		<div class="conteudo-principal">
+			<div class="conteudo">
+			<a href="https://www.amazon.com.br/ACER-Notebook-Nitro-AN515-44-R4KA-Windows11/dp/B09ZQ943YL/ref=asc_df_B09ZQ943YL/?tag=googleshopp00-20&linkCode=df0&hvadid=379805798120&hvpos=&hvnetw=g&hvrand=6001993436196358281&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9074259&hvtargid=pla-1732081612047&psc=1"><img width="600" height="600" src="imagens/gif/ofertas black friday.gif"></a>
+				<p><b>INFORMAÇÕES ADICIONAIS</b></p>
+
+				<p> <ul>Marca: ACER
+Fabricante: Acer <br>
+Série: Notebook Nitro 5 AN515-44-R4KA <br>
+Cor: Preto <br>
+Altura do produto: 24.35 milímetros <br>
+Largura do produto: 36.3 centímetros <br>
+Tamanho de tela vertical: 15.6 Polegadas <br>
+Resolução: 1920x1080: AMD Ryzen 7 <br>
+Velocidade do processador: 2.4 GHz <br>
+Número de processadores: 1 <br>
+Tamanho da memória externa: 8 GB <br>
+Tamanho da memória: 8 GB <br>
+Tecnologia da memória: DDR4 <br>
+Tipo de Memória: DDR4 SDRAM <br>
+Máximo de memória compatível: 32 GB <br>
+Velocidade do relógio de memória: 2400 MHz <br>
+Tamanho do armazenamento: 512 GB SSD <br> <br>
+Modelo de placa de vídeo: NVIDIA GeForce GTX 1650 <br>
+Tipo de memória de vídeo: GDDR6 <br>
+Memória de vídeo: 4 GB <br>
+Número de portas USB 3.0: 4 <br>
+Número de Conexões HDMI: 1 <br>
+Voltagem: 110.220 Volts <br>
+Potência em watts: 57 watt_hours <br>
+Dispositivo de armazenamento óptico: Não aplicável <br>
+Fonte de alimentação: Energia elétrica <br>
+Sistema operacional: Windows 11 <br>
+Conteúdo de energia da bateria de lítio: 57 Watt-hora <br>
+Peso do produto: 2.5 kg <br>
+Dimensões do produto: 25.5 x 36.34 x 2.43 cm; 2.5 Quilogramas <br></ul>
+
+			</div><!--FIM DO CONTEUDO -->
+			
+		</div><!--FIM DO CONTEUDO PRINCIPAL -->
+		<section class="barra">
+			<h1 class="h1">PC na palma da mão!</h1>
+			<div>Sabe quando suas vendas está tão boa que você não vê o tempo passar? Era pra ser só uma hora, ou mas você se empolga e acabam se tornando horas e horas? Está tudo bem, todo empreendedor, pro ou não já passou por isso, e cá entre nós, isso vai acabar acontecendo de novo e de novo e de novo... Pensando nisso, trouxemos A mesa ANAH, pensada em proporcionar conforto e segurança para quelas horas em que o tempo voa.</div> <br>
+			<img src="imagens/Usando notebook.jpg" width="322" height="530">
+			<div id="product-reviews">
+  <h2>Avaliações e Comentários</h2>
+  <form id="review-form">
+    <input type="text" id="name-input" placeholder="Seu nome" required>
+    <textarea id="review-input" placeholder="Digite seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div id="reviews-list"></div>
+</div>
+
+<style>
+  #product-reviews {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #review-form input,
+  #review-form textarea,
+  #review-form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+
+  #reviews-list .review-item {
+    margin-bottom: 20px;
+  }
+
+  #reviews-list h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #reviews-list p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+
+<script>
+  // Array para armazenar as avaliações
+  var reviews = [];
+
+  // Função para adicionar uma nova avaliação
+  function addReview(name, review) {
+    var newReview = { name: name, review: review };
+    reviews.push(newReview);
+  }
+
+  // Função para exibir as avaliações
+  function displayReviews() {
+    var reviewsList = document.getElementById("reviews-list");
+    reviewsList.innerHTML = "";
+
+    for (var i = 0; i < reviews.length; i++) {
+      var reviewItem = document.createElement("div");
+      reviewItem.className = "review-item";
+      reviewItem.innerHTML = "<h3>" + reviews[i].name + "</h3><p>" + reviews[i].review + "</p>";
+      reviewsList.appendChild(reviewItem);
+    }
+  }
+
+  // Evento de envio do formulário
+  var reviewForm = document.getElementById("review-form");
+  reviewForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var nameInput = document.getElementById("name-input");
+    var reviewInput = document.getElementById("review-input");
+
+    var name = nameInput.value;
+    var review = reviewInput.value;
+
+    addReview(name, review);
+    displayReviews();
+
+    nameInput.value = "";
+    reviewInput.value = "";
+  });
+</script>
+
+
+		</section><!--FIM DA BARRA -->
+		<footer class="rodape">
+			TODOS OS DIREITOS RESERVADOS / 2022
+		</footer>
+	</div> <!--FIM DO CORPO -->
+
+</div> <!-- Fim Div Principal -->
+</body>
+</html>

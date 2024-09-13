@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROJETO 2º TDS SUB</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="CSS/dpmenu.css">
+</head>
+<body>
+	<div class="principal">
+		<div class="cabecalho">
+			<div class="logo-cabecalho">
+				<a href="index.html"><img src="imagens/Logotipo_2.0-removebg-preview.png" width="200" height="200" title="Pagina Inicial"></a>
+			</div>
+			<div class="pesquisa">
+				<input id="input" type="text" placeholder="Buscar...">
+				<input id="botao" type="submit" value="Pesquisar">
+			</div>
+			<div class="icone">
+				<nav>
+					<a href="http://www.facebook.com"><img width="30" height="30" src="imagens/icon/fb.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/rss.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/sap.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/twitter.png"></a>
+					<a href=""><img width="30" height="30" src="imagens/icon/vimeo.png"></a>
+				</nav>
+			</div>
+		</div> <!-- FIM DO CABEÇALHO -->
+	<div class="corpo">
+		<div class="menu">
+			<nav class="dp-menu">
+				<ul>
+					<li><a href="index.html">Inicial</a></li>
+					<li><a href="">Produtos</a>
+						<ul>
+							<li><a href="Cadeira.html">Cadeira</a></li>
+							<li><a href="Mesa.html">Mesa</a></li>
+							<li><a href="Mouse.html">Mouse</a></li>
+							<li><a href="Notebook.html">Notebook</a></li>
+						</ul>
+					</li>
+					<li><a href="contato.html">Central de comunicação</a></li>
+					<li><a href="Equipe.html">Equipe</a></li>
+				</ul>
+			</nav>
+		</div><!-- FIM DO MENU DROPDOWN -->
+		<div class="conteudo-principal">
+			<div class="conteudo">
+				<a href="https://www.amazon.com.br/Razer-Basilisk-Mouse-ergon%C3%B4mico-personaliz%C3%A1vel/dp/B09C13PZX7?th=1"><img width="600" height="600" src="imagens/gif/Razer mouse.gif"></a>
+				<p><b>INFORMAÇÕES ADICIONAIS</b></p>
+
+				<p> <ul>Marca: Razer
+Fabricante: Razer Inc. <br>
+Modelo: RZ01-04000100-R3U1 <br>
+Nome do modelo: Basilisk V3 <br>
+Tipo Do Produto: Computadores pessoais <br> 
+Plataforma de hardware: PC <br>
+Aparelhos compatíveis: PC <br>
+Número de unidades: 1 <br>
+Baterias inclusas: Não <br>
+Funciona com baterias: Não <br>
+Tecnologia de conexão: Wired - Razer Speedflex Cable <br>
+Tecnologia de detecção de movimento: Óptico <br>
+Contém líquido? Não <br>
+Cor: Preto clássico <br>
+Cor correspondente: Preto clássico <br>
+Conexões: Wired - Razer Speedflex Cable <br>
+Peso do produto: 127 g <br> 
+Dimensões do produto: 7.52 x 13 x 4.24 cm; 127.01 g <br>
+					
+
+				</ul></p>
+			</div><!--FIM DO CONTEUDO -->
+			
+		</div><!--FIM DO CONTEUDO PRINCIPAL -->
+		<section class="barra">
+			<h1 class="h1">Ratinho na palma da mão!</h1>
+			<div>Sabe quando suas vendas está tão boa que você não vê o tempo passar? Era pra ser só uma hora, ou mas você se empolga e acabam se tornando horas e horas? Está tudo bem, todo empreendedor, pro ou não já passou por isso, e cá entre nós, isso vai acabar acontecendo de novo e de novo e de novo... Pensando nisso, trouxemos o Mouse Razer Basilisk V3, pensada em proporcionar conforto e precisão para quelas horas em que o tempo voa.</div> <br>
+			<img src="imagens/basiliskv3_button.jpg" width="322" height="530">
+			<div id="product-reviews">
+  <h2>Avaliações e Comentários</h2>
+  <form id="review-form">
+    <input type="text" id="name-input" placeholder="Seu nome" required>
+    <textarea id="review-input" placeholder="Digite seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div id="reviews-list"></div>
+</div>
+
+<style>
+  #product-reviews {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #review-form input,
+  #review-form textarea,
+  #review-form button {
+    display: block;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+
+  #reviews-list .review-item {
+    margin-bottom: 20px;
+  }
+
+  #reviews-list h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #reviews-list p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+
+<script>
+  // Array para armazenar as avaliações
+  var reviews = [];
+
+  // Função para adicionar uma nova avaliação
+  function addReview(name, review) {
+    var newReview = { name: name, review: review };
+    reviews.push(newReview);
+  }
+
+  // Função para exibir as avaliações
+  function displayReviews() {
+    var reviewsList = document.getElementById("reviews-list");
+    reviewsList.innerHTML = "";
+
+    for (var i = 0; i < reviews.length; i++) {
+      var reviewItem = document.createElement("div");
+      reviewItem.className = "review-item";
+      reviewItem.innerHTML = "<h3>" + reviews[i].name + "</h3><p>" + reviews[i].review + "</p>";
+      reviewsList.appendChild(reviewItem);
+    }
+  }
+
+  // Evento de envio do formulário
+  var reviewForm = document.getElementById("review-form");
+  reviewForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var nameInput = document.getElementById("name-input");
+    var reviewInput = document.getElementById("review-input");
+
+    var name = nameInput.value;
+    var review = reviewInput.value;
+
+    addReview(name, review);
+    displayReviews();
+
+    nameInput.value = "";
+    reviewInput.value = "";
+  });
+</script>
+
+
+		</section><!--FIM DA BARRA -->
+		<footer class="rodape">
+			TODOS OS DIREITOS RESERVADOS / 2022
+		</footer>
+	</div> <!--FIM DO CORPO -->
+
+</div> <!-- Fim Div Principal -->
+</body>
+</html>

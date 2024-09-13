@@ -1,0 +1,82 @@
+/* COMEÇANDO A DIV PRINCIPAL E O CABEÇALHO */
+body{
+	/*background: url("../imagens/Logotipo 2.0.jpg"); */
+	background: linear-gradient(to bottom, black, red); 
+	background-attachment: fixed;
+	background-size: 100%;
+}
+.principal{
+	width: 1200px;
+	margin: 0 auto;
+}
+.cabecalho{
+	height: 200px;
+}
+.logo-cabecalho{
+	float: left;
+}
+.icone{
+	float: right;
+	margin-top: 50px;
+	margin-right: -20.2em;
+}
+.pesquisa{
+	float: right;
+	margin-top: 100px;
+
+}
+#input{
+	border: none;
+	padding: 8px;
+	border-radius: 5px;
+	outline: none;
+	font-size: 18px;
+}
+#botao{
+	background: radial-gradient(red, black);
+	border: none;
+	padding: 8px;
+	font-size: 18px;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#botao:hover{
+	background: radial-gradient(black, red);
+	color: white;
+}
+/*COMEÇANDO O CORPO */
+.corpo{
+	background: radial-gradient(white, lightgray);
+	box-shadow: 0 0 1em black, 0 0 1em black;
+}
+.conteudo-principal{
+	background: radial-gradient(lightgray, lightgray);
+	width: 850px;
+	display: inline-block;
+	margin-top: -25px;
+	height: 1400px;
+}
+.barra{
+	width: 345px;
+	display: inline-block;
+	float: right;
+	margin-top: -25px;
+	text-align: center;
+}
+.rodape{
+	background: radial-gradient(red, black);
+	padding: 20px;
+	color: white;
+	text-align: center;
+
+}
+.conteudo{
+	margin: 40px;
+	text-align: center;
+}
+/*ANIMAÇÃO */
+
+.ete1{
+	width: 760px;
+}
